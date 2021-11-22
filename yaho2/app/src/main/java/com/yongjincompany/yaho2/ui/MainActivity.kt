@@ -1,7 +1,8 @@
-package com.yongjincompany.yaho2
+package com.yongjincompany.yaho2.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.yongjincompany.yaho2.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
