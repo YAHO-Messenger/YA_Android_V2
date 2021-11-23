@@ -1,8 +1,7 @@
 package com.yongjincompany.yaho2.data
 
 data class Register(
+    val username: String,
     val email: String,
-    val password: String,
-    val role: List<String>,
-    val username: String
+    val password: String
 )
