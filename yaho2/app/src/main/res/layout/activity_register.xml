@@ -7,6 +7,7 @@
     tools:context=".ui.RegisterActivity">
 
     <ImageView
+        android:id="@+id/imageView"
         android:layout_width="240dp"
         android:layout_height="240dp"
         android:layout_marginTop="24dp"
@@ -39,6 +40,18 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
+    <EditText
+        android:id="@+id/userEt2"
+        android:layout_width="340dp"
+        android:layout_height="56dp"
+        android:layout_marginBottom="24dp"
+        app:layout_constraintBottom_toTopOf="@+id/idEt2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@drawable/white_background"
+        android:hint="  유저이름"
+        android:fontFamily="@font/sbaugrol"
+        android:inputType="text" />
 
     <EditText
         android:id="@+id/idEt2"
