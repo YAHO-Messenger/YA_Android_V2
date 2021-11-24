@@ -26,9 +26,9 @@ class LoginActivity : AppCompatActivity() {
         }
         binding.loginBtn.setOnClickListener {
 
-            val email = binding.idEt.text.toString()
+            val username = binding.idEt.text.toString()
             val password = binding.passwordEt.text.toString()
-            service.login(Login(email, password)).enqueue(object : Callback<String> {
+            service.login(Login(username, password)).enqueue(object : Callback<String> {
                 override fun onResponse(call: Call<String>, response: Response<String>) {
                     val result = response.body()
                     Log.e("로그인", "${result}")
