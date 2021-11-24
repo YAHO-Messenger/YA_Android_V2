@@ -24,17 +24,17 @@ class RegisterActivity : AppCompatActivity() {
         }
         binding.registerBtn.setOnClickListener {
 
-            val username = binding.userEt2.toString()
-            val email = binding.idEt2.toString()
-            val password = binding.passwordEt2.toString()
+            val username = binding.userEt2.text.toString()
+            val email = binding.idEt2.text.toString()
+            val password = binding.passwordEt2.text.toString()
             RetrofitRegister.service2.register(Register(username, email, password)).enqueue(object : Callback<String> {
                 override fun onResponse(call: Call<String>, response: Response<String>) {
                     val result = response.body()
-                    Log.e("로그인", "${result}")
+                    Log.e("회원가입", "${result}")
                 }
 
                 override fun onFailure(call: Call<String>, t:Throwable) {
-                    Log.e("로그인", "${t.localizedMessage}")
+                    Log.e("회원가입", "${t.localizedMessage}")
                 }
             })
         }
