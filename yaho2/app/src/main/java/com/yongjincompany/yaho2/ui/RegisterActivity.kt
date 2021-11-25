@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.widget.Toast
 import com.yongjincompany.yaho2.data.Register
 import com.yongjincompany.yaho2.databinding.ActivityRegisterBinding
 import com.yongjincompany.yaho2.utils.RetrofitRegister
@@ -35,6 +36,11 @@ class RegisterActivity : AppCompatActivity() {
 
                 override fun onFailure(call: Call<String>, t:Throwable) {
                     Log.e("회원가입", "${t.localizedMessage}")
+                    val text = "회원가입에 실패했습니다!"
+                    val duration = Toast.LENGTH_SHORT
+
+                    val toast = Toast.makeText(applicationContext, text, duration)
+                    toast.show()
                 }
             })
         }
