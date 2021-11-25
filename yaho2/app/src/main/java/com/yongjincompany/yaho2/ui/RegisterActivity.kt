@@ -31,6 +31,7 @@ class RegisterActivity : AppCompatActivity() {
             RetrofitRegister.service2.register(Register(username, email, password)).enqueue(object : Callback<String> {
                 override fun onResponse(call: Call<String>, response: Response<String>) {
                     val result = response.body()
+                    startActivity(Intent(this@RegisterActivity, LoginActivity::class.java ))
                     Log.e("회원가입", "${result}")
                 }
 
