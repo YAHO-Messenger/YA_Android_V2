@@ -39,27 +39,46 @@
         app:layout_constraintStart_toStartOf="parent" />
 
 
-        <EditText
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/idTil"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="340dp"
+        android:layout_height="56dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/passwordTil"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/idEt"
-            android:layout_width="340dp"
-            android:layout_height="56dp"
-            android:layout_marginBottom="24dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/sbaugrol"
             android:background="@drawable/white_background"
-            android:hint="   닉네임을 입력해주세요"
-            app:layout_constraintBottom_toTopOf="@+id/passwordEt"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
+            android:hint="닉네임을 입력해주세요"
+            android:inputType="text" />
+    </com.google.android.material.textfield.TextInputLayout>
 
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/passwordTil"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="340dp"
+        android:layout_height="56dp"
+        android:layout_marginBottom="40dp"
+        app:layout_constraintBottom_toTopOf="@+id/login_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:passwordToggleEnabled="true">
 
-        <EditText
+        <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/passwordEt"
-            android:layout_width="340dp"
-            android:layout_height="56dp"
-            android:layout_marginBottom="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:background="@drawable/white_background"
-            android:hint="   비밀번호를 입력해주세요"
-            app:layout_constraintBottom_toTopOf="@+id/login_btn"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
+            android:fontFamily="@font/sbaugrol"
+            android:hint="비밀번호를 입력해주세요"
+            android:inputType="textPassword" />
 
+
+    </com.google.android.material.textfield.TextInputLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
