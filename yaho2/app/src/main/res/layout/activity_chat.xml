@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.ChatActivity">
+    tools:context=".ui.ChatActivity"
+    android:background="#FFBED4">
 
 
     <LinearLayout
@@ -12,7 +13,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:background="#D5D5D5"
+        android:background="#E4E4E4"
         android:orientation="horizontal">
 
         <EditText
@@ -25,18 +26,19 @@
             android:background="@drawable/white_background"
             android:backgroundTint="@android:color/white"
             android:hint="메시지를 입력해주세요"
+            android:fontFamily="@font/sbaugrol"
             android:textColor="@color/black"
             android:padding="10dp"
             android:singleLine="true" />
 
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btn_send"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_margin="10dp"
             android:layout_weight="1"
             android:background="@drawable/white_background"
-            android:backgroundTint="#26A69A"
+            android:backgroundTint="#E91E63"
             android:text="전 송"
             android:fontFamily="@font/sbaugrom"
             android:textColor="@android:color/white" />
