@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.widget.Toast
 import com.yongjincompany.yaho2.R
 import com.yongjincompany.yaho2.data.Login
 import com.yongjincompany.yaho2.databinding.ActivityLoginBinding
@@ -36,6 +37,11 @@ class LoginActivity : AppCompatActivity() {
 
                 override fun onFailure(call: Call<String>, t:Throwable) {
                     Log.e("로그인", "${t.localizedMessage}")
+                    val text = "로그인에 실패했습니다!"
+                    val duration = Toast.LENGTH_SHORT
+
+                    val toast = Toast.makeText(applicationContext, text, duration)
+                    toast.show()
                 }
             })
         }
