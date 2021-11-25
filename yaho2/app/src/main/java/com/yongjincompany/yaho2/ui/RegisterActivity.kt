@@ -46,4 +46,8 @@ class RegisterActivity : AppCompatActivity() {
             })
         }
     }
+
+    override fun onBackPressed() {
+        //super.onBackPressed()
+    }
 }

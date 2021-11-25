@@ -1,11 +1,11 @@
 package com.yongjincompany.yaho2.ui
 
+import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.widget.Toast
-import com.yongjincompany.yaho2.R
 import com.yongjincompany.yaho2.data.Login
 import com.yongjincompany.yaho2.databinding.ActivityLoginBinding
 import com.yongjincompany.yaho2.utils.RetrofitLogin.service
@@ -33,6 +33,8 @@ class LoginActivity : AppCompatActivity() {
                 override fun onResponse(call: Call<String>, response: Response<String>) {
                     val result = response.body()
                     Log.e("로그인", "${result}")
+                    startActivity(Intent(this@LoginActivity,ChatActivity::class.java))
+                    finish()
                 }
 
                 override fun onFailure(call: Call<String>, t:Throwable) {
@@ -46,4 +48,9 @@ class LoginActivity : AppCompatActivity() {
             })
         }
     }
+
+    override fun onBackPressed() {
+        //super.onBackPressed()
+    }
+
 }
