@@ -12,7 +12,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Yaho2"
         android:usesCleartextTraffic="true">
-        <activity android:name=".ui.ChatActivity"
+        <activity
+            android:name=".ui.MadeRoomActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.ChatActivity"
             android:exported="true" />
         <activity
             android:name=".ui.RegisterActivity"
