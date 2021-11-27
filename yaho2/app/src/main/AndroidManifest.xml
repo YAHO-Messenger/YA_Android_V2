@@ -13,6 +13,9 @@
         android:theme="@style/Theme.Yaho2"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".ui.RoomActivity"
+            android:exported="true" />
+        <activity
             android:name=".ui.MadeRoomActivity"
             android:exported="true" />
         <activity
