@@ -8,12 +8,5 @@ import retrofit2.converter.scalars.ScalarsConverterFactory
 
 object RetrofitRegister {
 
-    var gson = GsonBuilder().setLenient().create()
-
-    val retrofit2 = Retrofit.Builder()
-        .baseUrl("http://15.165.28.181:8080")
-        .addConverterFactory(ScalarsConverterFactory.create())
-        .addConverterFactory(GsonConverterFactory.create(gson))
-        .build()
-    val service2 = retrofit2.create(RegisterInterface::class.java)
+    val service2 = retrofit.create(RegisterInterface::class.java)
 }
