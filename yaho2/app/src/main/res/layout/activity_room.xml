@@ -4,13 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.RoomActivity">
+    tools:context=".ui.RoomActivity"
+    android:background="#FFBED4">
 
     <View
         android:id="@+id/view"
         android:layout_width="match_parent"
         android:layout_height="52dp"
-        android:background="#E91E63"
+        android:background="#FF2871"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -31,16 +32,21 @@
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_height="0dp"
+        tools:listitem="@layout/room_item"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/view" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/made_room_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:backgroundTint="#FF4484"
-        tools:layout_editor_absoluteX="339dp"
-        tools:layout_editor_absoluteY="659dp" />
+        android:backgroundTint="#E91E63"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:src="add"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
