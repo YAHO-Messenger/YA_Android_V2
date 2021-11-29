@@ -58,6 +58,7 @@
         />
     
     <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/made_room_dialog"
         android:layout_width="0dp"
         android:layout_height="50dp"
         android:text="생성하기"
@@ -71,6 +72,6 @@
         app:layout_constraintStart_toStartOf="@+id/cen"
         app:layout_constraintEnd_toEndOf="@+id/cen"
         app:layout_constraintTop_toBottomOf="@+id/cen"
-        app:layout_constraintBottom_toBottomOf="@+id/cen"
+        app:layout_constraintBottom_toBottomOf="@+id/cen"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
