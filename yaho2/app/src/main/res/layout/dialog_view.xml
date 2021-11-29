@@ -1,6 +1,76 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-             android:layout_width="match_parent"
-             android:layout_height="match_parent">
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:id="@+id/cen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="50dp"
+        android:orientation="vertical"
+        android:background="@drawable/white_background"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:gravity="center_horizontal"
+        android:text="방 생성"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:fontFamily="@font/sbaugrom"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="50dp"
+        android:gravity="center_horizontal"
+        android:text="방제를 정하고 방을 만드세요!"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:fontFamily="@font/sbaugrol"/>
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/ic_baseline_forum_24"
+        android:background="@drawable/dialog_circle_image"
+        android:padding="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/cen"
+        app:layout_constraintTop_toTopOf="@+id/cen"
+        app:layout_constraintStart_toStartOf="@+id/cen"
+        app:layout_constraintEnd_toEndOf="@+id/cen"
+        />
+    
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:text="생성하기"
+        android:background="@drawable/white_background"
+        android:textColor="@color/black"
+        android:fontFamily="@font/sbaugrom"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintStart_toStartOf="@+id/cen"
+        app:layout_constraintEnd_toEndOf="@+id/cen"
+        app:layout_constraintTop_toBottomOf="@+id/cen"
+        app:layout_constraintBottom_toBottomOf="@+id/cen"
 
 </androidx.constraintlayout.widget.ConstraintLayout>
