@@ -33,7 +33,7 @@ class LoginActivity : AppCompatActivity() {
                 override fun onResponse(call: Call<String>, response: Response<String>) {
                     val result = response.body()
                     Log.e("로그인", "${result}")
-                    startActivity(Intent(this@LoginActivity,ChatActivity::class.java))
+                    startActivity(Intent(this@LoginActivity,RoomActivity::class.java))
                     finish()
                 }
 
