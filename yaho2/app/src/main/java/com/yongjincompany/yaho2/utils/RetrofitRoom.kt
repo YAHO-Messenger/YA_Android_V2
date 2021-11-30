@@ -4,5 +4,5 @@ import com.yongjincompany.yaho2.utils.RetrofitLogin.retrofit
 
 object RetrofitRoom {
 
-    val service3 = retrofit.create(RoomInterface::class.java)
+    val service3 = retrofit.create(PostRoomInterface::class.java)
 }
