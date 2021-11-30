@@ -6,7 +6,7 @@ import retrofit2.http.FormUrlEncoded
 import retrofit2.http.GET
 import retrofit2.http.POST
 
-interface RoomInterface {
+interface PostRoomInterface {
     @FormUrlEncoded
     @POST("/api/auth/chat")
     fun room(@Field ("roomname") name: String) : Call<String>
