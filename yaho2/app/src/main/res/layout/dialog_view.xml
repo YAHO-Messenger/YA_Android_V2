@@ -28,7 +28,8 @@
         android:textSize="20sp"
         android:fontFamily="@font/sbaugrom"/>
 
-    <TextView
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/room_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
@@ -36,11 +37,12 @@
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="50dp"
         android:gravity="center_horizontal"
-        android:text="방제를 정하고 방을 만드세요!"
+        android:hint="방제를 정하고 방을 만드세요!"
         android:textAlignment="center"
         android:textColor="@color/black"
         android:textSize="16sp"
         android:fontFamily="@font/sbaugrol"/>
+
 
 
     </LinearLayout>
@@ -50,7 +52,7 @@
         android:layout_height="60dp"
         android:src="@drawable/ic_baseline_forum_24"
         android:background="@drawable/dialog_circle_image"
-        android:padding="8dp"
+        android:padding="10dp"
         app:layout_constraintBottom_toTopOf="@+id/cen"
         app:layout_constraintTop_toTopOf="@+id/cen"
         app:layout_constraintStart_toStartOf="@+id/cen"
@@ -67,8 +69,8 @@
         android:fontFamily="@font/sbaugrom"
         android:textAllCaps="false"
         android:textSize="16sp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginStart="16dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginStart="12dp"
         app:layout_constraintStart_toStartOf="@+id/cen"
         app:layout_constraintEnd_toEndOf="@+id/cen"
         app:layout_constraintTop_toBottomOf="@+id/cen"
