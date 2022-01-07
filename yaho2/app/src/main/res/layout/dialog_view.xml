@@ -28,7 +28,7 @@
         android:textSize="20sp"
         android:fontFamily="@font/sbaugrom"/>
 
-    <com.google.android.material.textfield.TextInputEditText
+    <EditText
         android:id="@+id/room_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
